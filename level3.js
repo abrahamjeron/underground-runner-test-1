@@ -178,23 +178,15 @@ function startplay() {
 
         var coin1Left = Math.abs(coin1.getBoundingClientRect().left);
         var coin1Right = Math.abs(coin1.getBoundingClientRect().right);
-        var coin1Top = Math.abs(coin1.getBoundingClientRect().top);
-        var coin1Bottom = Math.abs(coin4.getBoundingClientRect().bottom);
 
         var coin2Left = Math.abs(coin2.getBoundingClientRect().left);
         var coin2Right = Math.abs(coin2.getBoundingClientRect().right);
-        var coin2Top = Math.abs(coin2.getBoundingClientRect().top);
-        var coin2Bottom = Math.abs(coin4.getBoundingClientRect().bottom);
 
         var coin3Left = Math.abs(coin3.getBoundingClientRect().left);
         var coin3Right = Math.abs(coin3.getBoundingClientRect().right);
-        var coin3Top = Math.abs(coin3.getBoundingClientRect().top);
-        var coin3Bottom = Math.abs(coin4.getBoundingClientRect().bottom);
 
         var coin4Left = Math.abs(coin4.getBoundingClientRect().left);
         var coin4Right = Math.abs(coin4.getBoundingClientRect().right);
-        var coin4Top = Math.abs(coin4.getBoundingClientRect().top);
-        var coin4Bottom = Math.abs(coin4.getBoundingClientRect().bottom);
 
         var manLeft = (Math.abs(man.getBoundingClientRect().left))+100;
         var manRight = Math.abs(man.getBoundingClientRect().right);
@@ -205,18 +197,18 @@ function startplay() {
 
         if (((ratLeft < manLeft && manLeft < ratRight) || (ratLeft < manRight && manRight < ratRight)) && ((ratTop < manTop && manTop < ratbottom) || (ratTop < manBottom && manBottom < ratbottom))) {
             setTimeout(() => {
-                location.href='./gameoverpage2.html';
+                location.href='./gameoverpage3.html';
             },0)
         }
         if (((spiderLeft < manLeft && manLeft < spiderRight) || (spiderLeft < manRight && manRight < spiderRight)) && ((spiderTop < manTop && manTop < spiderbottom) || (spiderTop < manBottom && manBottom < spiderbottom))) {
             setTimeout(() => {
-                location.href='./gameoverpage2.html';
+                location.href='./gameoverpage3.html';
             },0)    
         }  
 
         if (((snakeLeft < manLeft && manLeft < snakeRight) || (snakeLeft < manRight && manRight < snakeRight)) && ((snakeTop < manTop && manTop < snakebottom) || (snakeTop < manBottom && manBottom < snakebottom))) {
             setTimeout(() => {
-                location.href='./gameoverpage2.html';
+                location.href='./gameoverpage3.html';
             },0) 
         } 
 
@@ -227,12 +219,11 @@ function startplay() {
             body.style.backgroundImage='url("./Asserts/nightbg.png")';
             setTimeout(function () {
                 body.style.backgroundImage=' url("./Asserts/Frame\ 53.png")';
-            }, 6000);
-            // body.style.backgroundImage='url("./Asserts/nightbg.png")';
+            }, 3000);
             centi.style.visibility = 'hidden';
             setTimeout(function () {
                 centi.style.visibility = 'visible';
-            }, 6000); 
+            }, 8000); 
           }
           
         if (((coin1Left < manLeft && manLeft < coin1Right) || (coin1Left < manRight && manRight < coin1Right))) {
@@ -257,7 +248,7 @@ function startplay() {
         if (((coin3Left < manLeft && manLeft < coin3Right) || (coin3Left < manRight && manRight < coin3Right))) {
             n += 1;
             coin3.style.visibility = 'hidden';
-            coinsound.play();
+            coinSound.play();
             setTimeout(function () {
                 coin3.style.visibility = 'visible';
             }, 2000);
@@ -266,14 +257,14 @@ function startplay() {
         if (((coin4Left < manLeft && manLeft < coin4Right) || (coin4Left < manRight && manRight < coin4Right))) {
             n += 1;
             coin4.style.visibility = 'hidden';
-            coinsound.play(); 
+            coinSound.play(); 
             setTimeout(function () {
             coin4.style.visibility = 'visible';
             }, 2000);
         }
 
 
-        if (n==70){
+        if (n==100){
             setTimeout(() => {
                 location.href='./congratspage.html';
             },0) 

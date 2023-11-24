@@ -9,7 +9,7 @@ body{
     background-image: url("./Asserts/Level\ Selection\ page1.png");
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 h1{
     position: relative;
@@ -20,15 +20,39 @@ h1{
 }
 .levels{
     position: relative;
-    left: 16%;
-    top: 250px;
+    left: 15%;
+    top: 200px;
     display: flex;
     justify-content: space-around;
-    width: 1000px;
+    width: 1700px;
 }
-#level1,#level2{
+p{
     position: relative;
-    height: 250px;
+    top: 330px;
+    left: 48%;
+    color: white;
+    font-size: 10px;
+    z-index: 1001;
+}
+#downarrow{
+    position: absolute;
+    top: 400px;
+    height: 200px;
+    left: 630px;
+}
+#level3unlocked{
+    display: none;
+    top: 250px;
+    right: 850px;
+}
+#level1,#level2,#level3unlocked,#level3{
+    position: relative;
+    height: 200px;
+}
+#level3{
+    top: 250px;
+    right: 750px;
+    z-index: 1001;
 }
 #level1:hover{
     bottom: 10px;
@@ -44,31 +68,39 @@ h1{
     background: #FFF;
     box-shadow: 8px 11px 4px 0px rgba(255, 255, 255, 0.25);
 }
-
+#level3:hover{
+    border-radius: 11px;
+    background: #FFF;
+    box-shadow: 8px 11px 4px 0px rgba(255, 255, 255, 0.25);
+}
+#level3unlocked:hover{
+    border-radius: 11px;
+    background: #FFF;
+    box-shadow: 8px 11px 4px 0px rgba(255, 255, 255, 0.25);
+}
 /* mobile responsive */
-@media screen and (max-width:600px) {
+@media (orientation:portrait) {
     body{
         background-image: url("./Asserts/level\ selection\ page\ mobile\ responsive.png");
-        background-size: 135%;
-        background-position-x: -100px;
+        background-size: cover;
     }
 
     h1{
         position: relative;
         top: 180px;
-        left: 38%;
+        left: 35%;
         color: white;
         font-size: 1.5rem;
     }
-    #level1,#level2{
+    #level1,#level2,#level3{
         height: 100px;
     }
     .levels{
         position: relative;
-        left: 10%;
         top: 250px;
         display: flex;
         justify-content: space-around;
-        width: 400px;
+        width: 1000px;
     }
+   
 }

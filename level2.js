@@ -265,7 +265,7 @@ function startplay() {
 
         if (n==70){
             setTimeout(() => {
-                location.href='./congratspage.html';
+                location.href='./levelpages3.html';
             },0) 
         }
         localStorage.setItem("score",n);

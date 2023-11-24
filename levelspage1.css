@@ -21,14 +21,20 @@ h1{
 .levels{
     position: relative;
     left: 16%;
-    top: 250px;
+    top: 200px;
     display: flex;
     justify-content: space-around;
-    width: 1000px;
+    width: 1500px;
 }
-#level1,#level2{
+#level1,#level2,#level3{
     position: relative;
-    height: 250px;
+    height: 200px;
+}
+#level3{
+    position: relative;
+    top: 260px;
+    right: 760px;
+
 }
 #level1:hover{
     bottom: 10px;
@@ -64,5 +70,11 @@ h1{
         display: flex;
         justify-content: space-around;
         width: 400px;
+    }
+    #level3{
+        position: relative;
+        top: 260px;
+        right: 760px;
+    
     }
 }

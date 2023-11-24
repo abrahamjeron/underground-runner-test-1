@@ -7,78 +7,55 @@
 }
 body{
     background-image: url("./Asserts/Frame\ 53.png");
-    background-size: cover;
+    background-size: 105%;
     background-repeat: no-repeat;
     overflow: hidden;
 }
-.game-won-popup{
+.game-over-popup{
     position: relative;
     left: 35%;
     top: 200px;
     background-color: #CAE1F0;
     width: 500px;
     height: 300px;
+    text-align: center;
     padding-top: 25px;
     padding-bottom: 25px;
     border-radius: 25px;
-    line-height: 32px;
-}.game-won-popup p{
-    position: relative;
-    left: 70px;
-    top: 20px;
+    line-height: 55px;
+}.game-over-popup p{
     font-size: 1.2rem;
 }
-.game-won-popup h1{
+.game-over-popup #yesbtn{
     position: relative;
-    top: 20px;
-    left: 40px;
-    font-size: 1.2rem;
-}
-.game-won-popup #nextlevelbtn{
-    position: relative;
-    left: 40%;
-    top: 22px;
     text-decoration: none;
     color: black;
     background-color:#96CBEE;
     width: 60px;
     padding: 15px 10px 15px 10px;
     border-radius: 5px;
-    font-size: 0.7rem;
-}
-#nobtn{
-    position: relative;
-    left: 35%;
-    top: 22px;
-    text-decoration: none;
-    color: black;
-    padding: 10px 3px 10px 3px;
-    border-radius: 7px;
-    font-size: 0.7rem;
-    border: 3px solid #f0a92c ;
-    background-color:#f0a92c;
 }
 @media screen and (max-width:600px) {
     body{
         background-image: url("./Asserts/mobile\ res.png");
         background-size: cover ;
     }
-    .game-won-popup{
+    
+    .game-over-popup{
         position: relative;
-        left: 10%;
+        left: 15%;
         top: 200px;
-        background-color: #CAE1F0;
-        width: 400px;
-        height: 300px;
-        padding-top: 25px;
-        padding-bottom: 25px;
+        width: 350px;
+        height: 200px;
+        text-align: center;
         border-radius: 25px;
-        line-height: 32px;
+        line-height: 25px;
     }
-    .game-won-popup h1{
+    .game-over-popup p{
         font-size: 1rem;
     }
-    .game-won-popup p{
-        font-size: 0.9rem;
+    .game-over-popup #yesbtn{
+        position: relative;
+        top: 20px;
     }
 }
