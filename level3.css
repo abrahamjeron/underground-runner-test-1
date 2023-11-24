@@ -286,14 +286,14 @@ button{
     }
     .left-right{
         position: relative;
-        top: 110px;
+        top: 70px;
         display: flex;
         justify-content: flex-end;
         height: 60px;
     }
     #top-key{
         position: relative;
-        top: 50px;
+        top: 10px;
         left: 30px;
         height: 60px;
     }
@@ -301,9 +301,6 @@ button{
         position: relative;
         bottom: 150px;
     }
-    /* #centipedie{
-        display: none;
-    } */
     #coin1,#coin2,#coin3,#coin4{
         position: relative;
         bottom: 220px;

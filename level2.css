@@ -310,14 +310,14 @@ button{
     }
     .left-right{
         position: relative;
-        top: 110px;
+        top: 60px;
         display: flex;
         justify-content: flex-end;
         height: 60px;
     }
     #top-key{
         position: relative;
-        top: 50px;
+        top: 5px;
         left: 30px;
         height: 60px;
     }

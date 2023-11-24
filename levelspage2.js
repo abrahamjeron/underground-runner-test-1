@@ -7,5 +7,6 @@ level2.addEventListener("click",function(){
     level2.style.display='none';
     downarrow.style.display='none';
     text.style.display='none'
-})
+});
+
 
