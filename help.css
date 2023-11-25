@@ -1,3 +1,4 @@
+/* styling for desktop view */
 @font-face {
     font-family: pixels;
     src: url("./Press_Start_2P/PressStart2P-Regular.ttf");
@@ -52,7 +53,7 @@ a{
     border-radius: 27px;
     text-decoration: none;
 }
-
+/* styling for mobile responsiveness */
 @media (orientation:portrait){
     body{
         background-image: url("./Asserts/Game\ Play\ page.png");

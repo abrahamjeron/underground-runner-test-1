@@ -58,6 +58,7 @@ body{
     border: 3px solid #f0a92c ;
     background-color:#f0a92c;
 }
+/* Mobile responsive */
 @media screen and (max-width:600px) {
     body{
         background-image: url("./Asserts/mobile\ res.png");

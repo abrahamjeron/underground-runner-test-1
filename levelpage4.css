@@ -1,3 +1,4 @@
+/* styling fot destop view */
 @font-face {
     font-family: pixels;
     src: url("./Press_Start_2P/PressStart2P-Regular.ttf");
@@ -9,7 +10,7 @@ body{
     background-image: url("./Asserts/Level\ Selection\ page1.png");
     background-size: cover;
     background-repeat: no-repeat;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 h1{
     position: relative;

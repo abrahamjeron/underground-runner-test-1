@@ -6,7 +6,8 @@
     <title>UnderGround Runner</title>
     <link rel="stylesheet" href="./level3.css">
 </head>
-<body>
+<body>     
+    <!-- Contents which will be displayed to assist the player -->
     <div class="howtoplay">
         <h1>How to play?</h1>
         <p id="description">Try to cath <br> the night vision  <br>camera for clear <br> vision.</p>
@@ -14,15 +15,17 @@
         <img src="./Asserts/night 1.png" alt="" id="night1">
         <img src="./Asserts/night 2.png" alt="" id="night2">
     </div>
+    <!-- button to start the game and the howplay contents will we hidden -->
     <button id="startbtn1">Start</button>
 
-
+    <!-- The game contetns contains the game charecters -->
     <div class="gamecontents">
         <div id="score">Score:0</div>
         <div class="buttons">
             <img src="./Asserts/mute.png" alt="" id="mute">
             <img src="./Asserts/replay.png" alt="" id="replay">
         </div>
+        <!-- importing the game charecters images -->
         <img src="./Asserts/man.gif" alt="" id="man">
         <img src="./Asserts/spider.png" alt="" id="spider">
         <img src="./Asserts/rat.png" alt="" id="rat">
@@ -32,10 +35,12 @@
         <img src="./Asserts/coin.png" alt="" id="coin2" class="coins">
         <img src="./Asserts/coin.png" alt="" id="coin3" class="coins">
         <img src="./Asserts/coin.png" alt="" id="coin4" class="coins">
+        <!-- importing the game audios -->
         <audio src="./Asserts/vxA=.mp3" id="bgm" loop></audio>
         <audio src="./Asserts/Mario Jump Sound Effect.mp3" id="jumpsound"></audio>
         <audio src="./Asserts/coinsound.mp3" id="coinsound"></audio>
     </div>
+    <!-- importing the controls for mobile responsiveness -->
     <div class="mobile-reponsive-controls">
         <div class="left-right">
             <img src="./Asserts/left key.png" alt="" id="left-key">

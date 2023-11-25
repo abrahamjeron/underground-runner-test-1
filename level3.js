@@ -1,37 +1,43 @@
 // initalising the variables
+//initialising the game charecters
 const startbtn = document.getElementById("startbtn1");
 const man = document.getElementById("man");
 const rat = document.getElementById("rat");
 const snake = document.getElementById("snake");
 const spider = document.getElementById("spider");
 const centi = document.getElementById("centipedie");
+//initialising the coins
 const coin1 = document.getElementById("coin1");
 const coin2 = document.getElementById("coin2");
 const coin3 = document.getElementById("coin3");
 const coin4 = document.getElementById("coin4");
+//initialising the sound effects
 const bagroundmusic = document.getElementById("bgm");
 const jumpSound = document.getElementById("jumpsound");
 const coinSound = document.getElementById("coinsound");
+//initialising the game score
 const score = document.getElementById("score");
 const gamecontents = document.querySelector(".gamecontents");
 const gamedescription = document.querySelector(".howtoplay");
 const mutebutton = document.getElementById("mute");
 const reload = document.getElementById("replay");
+//initialising the mobile control keys
 const topKey = document.getElementById("top-key");
 const leftKey = document.getElementById("left-key");
 const rightKey = document.getElementById("right-key");
 const body = document.querySelector("body");
+//The game will start when the Enter key is pressed
 window.addEventListener("keydown", function(event){
     switch (event.key){
         case "Enter":
             startplay();
     }
 });
-
+//The game will start when the start button is pressed on the screen
 startbtn.addEventListener("click",function(){
     startplay();
 });
-
+// creating function startPlay()
 function startplay() {
     gamecontents.style.display = 'inherit';
     startbtn.style.display='none';
@@ -100,6 +106,7 @@ function startplay() {
             }
         },20);
     }
+    //The MAN will start jumping when the top arrow key is pressed
     window.addEventListener("keydown", function(event){
         switch (event.key){
             case "ArrowUp":
@@ -108,10 +115,12 @@ function startplay() {
                 break;
         }
     });
+    //This is for mobile version. The MAN will jump if the top button is clicked on the screen
     topKey.addEventListener("click",function(){
         jump();
         jumpSound.play();
     });
+        //The MAN will start jumping when the space bar is pressed
     window.addEventListener("keydown", function(event){
         switch (event.key){
             case " ":
@@ -146,6 +155,7 @@ function startplay() {
         man.style.left = (currentLeft + move) + 'px';
         man.classList.remove("flipped");
     };
+    //this is for mobile version.
     leftKey.addEventListener("click",moveLeft);
     rightKey.addEventListener("click",moveRight);
     // logic of the game
@@ -154,12 +164,11 @@ function startplay() {
     var remaining = 70;
     setInterval(()=>{
         score.innerText=`Coins:${n}`;
-
+        //Getting the sixe of the game charecters to check the collision
         var spiderLeft = (Math.abs(spider.getBoundingClientRect().left)+30);
         var spiderRight = Math.abs(spider.getBoundingClientRect().right  ) ;
         var spiderTop = Math.abs(spider.getBoundingClientRect().top)+20;
         var spiderbottom = Math.abs(rat.getBoundingClientRect().bottom);
-
 
         var ratLeft = (Math.abs(rat.getBoundingClientRect().left) +30 );
         var ratRight = Math.abs(rat.getBoundingClientRect().right  );
@@ -194,7 +203,7 @@ function startplay() {
         var manBottom = Math.abs(man.getBoundingClientRect().bottom);
 
 
-
+        //checking the collition by if condition
         if (((ratLeft < manLeft && manLeft < ratRight) || (ratLeft < manRight && manRight < ratRight)) && ((ratTop < manTop && manTop < ratbottom) || (ratTop < manBottom && manBottom < ratbottom))) {
             setTimeout(() => {
                 location.href='./gameoverpage3.html';
@@ -263,12 +272,13 @@ function startplay() {
             }, 2000);
         }
 
-
+        // the game wil be finished when the score becomes 100
         if (n==100){
             setTimeout(() => {
                 location.href='./congratspage.html';
             },0) 
         }
+        // setting up the score to local storage
         localStorage.setItem("score",n);
     },100) 
 

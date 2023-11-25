@@ -1,3 +1,4 @@
+/* Styling for desktop view */
 @font-face {
     font-family: pixels;
     src: url("./Press_Start_2P/PressStart2P-Regular.ttf");
@@ -52,8 +53,6 @@ button{
     padding: 20px 45px 20px 45px;
     border: none;
     border-radius: 27px;
-    /* here-------------->>>>>>>>> */
-    /* display: none; */
 }
 .flipped{
     transform: scaleX(-1);
@@ -63,11 +62,13 @@ button{
     position: relative;
     bottom: 30px;
     transition: all 0.1s;
+        /* Unplug here to check how the collision happening */
     /* border: red 2px solid; */
 }
 #rat,#spider,#snake,#centipedie{
     position: relative;
     bottom: 20px;
+        /* Unplug here to check how the collision happening */
     /* border: red 2px solid; */
 }
 #centipedie{
@@ -76,6 +77,7 @@ button{
 #snake{
     height: 100px;
 }
+
 /* setting animation for the moving elements */
 @keyframes spider {
     0%{
@@ -146,7 +148,7 @@ button{
 }
 
 
-
+/* styling for game contents */
 #score{
     position: relative;
     bottom: 300px;
@@ -206,6 +208,7 @@ button{
         font-size: .7rem;
         line-height: 20px;
     }
+    /* styling controls for the mobile version */
     #arrowkeys{
         position: relative;
         left: 60%;

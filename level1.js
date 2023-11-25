@@ -251,6 +251,7 @@ function startplay(){
                 location.href='./levelspage2.html';
             },0) 
         }
+        //setitng the score to the local storage
         localStorage.setItem("score",n);
     },100)
 };

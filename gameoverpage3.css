@@ -1,3 +1,4 @@
+/* styling for desktop view */
 @font-face {
     font-family: pixels;
     src: url("./Press_Start_2P/PressStart2P-Regular.ttf");
@@ -35,6 +36,7 @@ body{
     padding: 15px 10px 15px 10px;
     border-radius: 5px;
 }
+/* for mobile responsiveness */
 @media screen and (max-width:600px) {
     body{
         background-image: url("./Asserts/mobile\ res.png");
