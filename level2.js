@@ -279,6 +279,5 @@ function startplay() {
         }
         localStorage.setItem("score",n);
     },100) 
-
 };
 
