@@ -47,7 +47,7 @@ function startplay() {
     //setting animation for the elements
     snake.style.animation = 'snake 6.5s linear infinite';
     centi.style.animation = 'centipiede 7.2s linear infinite'; 
-    spider.style.animation = 'spider 5.2s linear infinite';
+    spider.style.animation = 'spider 5.9s linear infinite';
     rat.style.animation = 'rat 9.4s linear infinite';
     coin1.style.animation = 'coin1 5.1s linear infinite';
     coin2.style.animation = 'coin2 3.2s linear infinite';
