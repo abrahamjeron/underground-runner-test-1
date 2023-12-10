@@ -246,7 +246,7 @@ function startplay(){
             }, 2000);
         }
         // If the score reacheds 70, the level is finished
-        if (n==75){
+        if (n==50){
             setTimeout(() => {
                 location.href='./levelspage2.html';
             },0) 
